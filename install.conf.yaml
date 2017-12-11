@@ -1,0 +1,74 @@
+- clean: ['~']
+
+- link:
+    # ~/.dotfiles: ''
+    # ~/.vim: vim/
+    # ~/.vimrc: vimrc
+    # EDITORS
+    ~/.config/nvim/init.vim:
+      path: nvim.vim
+      create: true
+      relink: true
+      force: true
+    ~/.vimrc:
+      path: nvim.vim
+      relink: true
+      force: true
+    ~/.ideavimrc:
+      path: ideavimrc
+      relink: true
+      force: true
+    # ~/.spacemacs:
+    #   path: spacemacs
+    #   relink: true
+    #   force: true
+    ~/.emacs:
+      path: emacs
+      relink: true
+      force: true
+    ~/Library/Application Support/Code/User/settings.json:
+      path: VSCode/settings.json
+      create: true
+      relink: true
+      force: true
+    # TERMINAL MANAGEMENT
+    ~/.tmux.conf:
+      path: tmux.conf
+      relink: true
+      force: true
+    ~/.ssh/config:
+      path: ssh
+      create: true
+      relink: true
+      force: true
+    # SHELL
+    ~/.bash_profile:
+      path: bash_profile
+      relink: true
+      force: true
+    ~/.bashrc:
+      path: bashrc
+      relink: true
+      force: true
+    ~/.sharedrc:
+      path: sharedrc
+      relink: true
+      force: true
+    # GIT
+    ~/.gitconfig:
+      path: gitconfig
+      relink: true
+      force: true
+    ~/.git-commit-template:
+      path: git-commit-template
+      relink: true
+      force: true
+    # OTHER
+    ~/.config/gcloud/application_default_credentials.json:
+      path: application_default_credentials.json
+      relink: true
+      force: true
+
+
+- shell:
+  - [git submodule update --remote --merge, Installing submodules]
