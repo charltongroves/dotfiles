@@ -63,11 +63,6 @@
       path: git-commit-template
       relink: true
       force: true
-    # OTHER
-    ~/.config/gcloud/application_default_credentials.json:
-      path: application_default_credentials.json
-      relink: true
-      force: true
 
 
 - shell:

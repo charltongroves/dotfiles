@@ -65,5 +65,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh"
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "workbench.panel.location": "right"
 }
