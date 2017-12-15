@@ -4,6 +4,7 @@
 	email = max@maxbo.me
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = nvim
 [commit]
 	template = ~/.git-commit-template
 [diff]
