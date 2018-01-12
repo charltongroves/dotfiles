@@ -20,8 +20,8 @@ alias offdebug='SBT_OPTS="$SBT_OPTS_VAL"'
 # source $HOME/.cargo/env
 
 # - NODE VERSION MANAGER -
-# export NVM_DIR="$HOME/.nvm"
-# . "/usr/local/opt/nvm/nvm.sh"
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
@@ -59,7 +59,9 @@ alias htopp="sudo htop --delay=300"
 alias begone-thot="rm -rf"
 
 # https://stackoverflow.com/a/25620447/5835579
-docx() { unzip -p $1 word/document.xml | sed -e 's/<[^>]\{1,\}>//g; s/[^[:print:]]\{1,\}//g' }
+alias xmlextract="sed -e 's/<[^>]\{1,\}>//g; s/[^[:print:]]\{1,\}//g'"
+
+docx() { unzip -p $1 word/document.xml | xmlextract }
 
 docxn() { unzip -p $1 word/document.xml | sed -e 's/<\/w:p>/\n/g; s/<[^>]\{1,\}>//g; s/[^[:print:]\n]\{1,\}//g' }
 

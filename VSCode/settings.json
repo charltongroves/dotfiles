@@ -58,11 +58,11 @@
     "terminal.integrated.fontSize": 15,
     "window.zoomLevel": 0,
     "window.closeWhenEmpty": false,
-    "markdown-pdf.orientation": "landscape",
     "sublimeTextKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "workbench.editor.tabSizing": "shrink"
+    "workbench.editor.tabSizing": "shrink",
+    "julia.executablePath": "/usr/local/bin/julia"
 }
