@@ -266,9 +266,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2186 -204 1242 613 1440 -540 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1983 222 796 473 1440 -152 2560 1440 </string>
+	<string>2717 333 796 473 1440 -152 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>530 0 910 878 0 0 1440 900 </string>
+	<string>3075 -152 925 1440 1440 -152 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_26DA72E5-C68B-46F1-A3ED-84FF42503DEB</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_26DA72E5-C68B-46F1-A3ED-84FF42503DEB_selection</key>
@@ -875,7 +875,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
@@ -1140,7 +1140,7 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
 			<real>2</real>
 			<key>Bold Color</key>
@@ -1227,7 +1227,7 @@
 				<real>0.92156862745098</real>
 			</dict>
 			<key>Guid</key>
-			<string>1FFFBCE8-F098-4328-8765-D83AB9735A79</string>
+			<string>4908FD52-F570-48B7-891C-2460D8A67C5B</string>
 			<key>Has Hotkey</key>
 			<true/>
 			<key>Horizontal Spacing</key>
