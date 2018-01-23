@@ -58,7 +58,7 @@ alias subf="subl --command toggle_full_screen" # (sub)lime (f)ullscreen
 alias htopp="sudo htop --delay=300"
 alias begone-thot="rm -rf"
 
-github-pull () {
+github-clone () {
    git clone "https://github.com/MaxwellBo/$1"
 }
 
