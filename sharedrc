@@ -58,6 +58,10 @@ alias subf="subl --command toggle_full_screen" # (sub)lime (f)ullscreen
 alias htopp="sudo htop --delay=300"
 alias begone-thot="rm -rf"
 
+github-pull () {
+   git clone "https://github.com/MaxwellBo/$1"
+}
+
 # https://stackoverflow.com/a/25620447/5835579
 alias xmlextract="sed -e 's/<[^>]\{1,\}>//g; s/[^[:print:]]\{1,\}//g'"
 
@@ -71,6 +75,7 @@ docxn() { unzip -p $1 word/document.xml | sed -e 's/<\/w:p>/\n/g; s/<[^>]\{1,\}>
 
 alias ripgrep="rg"
 alias rgrep="rg"
+alias rgl="rg --fixed-strings" # Treat the pattern as a literal string instead of a regular expression
 alias clip-copy="pbcopy"
 alias clip-paste="pbpaste"
 alias fff="fzf"
