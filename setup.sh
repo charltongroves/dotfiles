@@ -13,7 +13,6 @@ brew cask # initializes
 ####################
 brew install docker
 
-
 ####################
 # LANGUAGE TOOLING #
 ####################
@@ -42,14 +41,12 @@ docker run --name maria -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mariadb:late
 #########
 # UTILS # 
 #########
-brew cask install iterm-2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark cheatsheet
-
+brew cask install iterm-2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark cheatsheet insomnia
 
 #########
 # CLOUD #
 #########
 brew cask install heroku google-cloud-sdk
-
 
 #######
 # CLI # 
