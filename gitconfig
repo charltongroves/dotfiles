@@ -2,6 +2,8 @@
 [user]
 	name = Max Bo
 	email = max@maxbo.me
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig_work
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nvim
@@ -17,5 +19,5 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

@@ -21,8 +21,9 @@ alias offdebug='SBT_OPTS="$SBT_OPTS_VAL"'
 
 # - NODE VERSION MANAGER -
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+# . "/usr/local/opt/nvm/nvm.sh"
 
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -57,6 +58,7 @@ fi
 alias subf="subl --command toggle_full_screen" # (sub)lime (f)ullscreen
 alias htopp="sudo htop --delay=300"
 alias begone-thot="rm -rf"
+alias ydsh="yarn run dev-server-hot"
 
 github-clone () {
    git clone "https://github.com/MaxwellBo/$1"
@@ -78,7 +80,8 @@ alias rgrep="rg"
 alias rgl="rg --fixed-strings" # Treat the pattern as a literal string instead of a regular expression
 alias clip-copy="pbcopy"
 alias clip-paste="pbpaste"
-alias fff="fzf"
+alias fff="fff"
+ffv() { vim $(fzf) }
 
 
 ##########
@@ -129,7 +132,7 @@ alias git-amend="git commit --amend --verbose"
 alias git-nevermind="!git reset --hard HEAD && git clean -d -f"
 
 alias git-adog="git log --all --decorate --oneline --graph"
-alias git-graph2="git log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order"
+alias git-graph="git log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order"
 
 # http://gitless.com/
 alias git-cloak="git update-index --assume-unchanged"

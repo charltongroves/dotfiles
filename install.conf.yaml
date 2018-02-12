@@ -59,6 +59,10 @@
       path: gitconfig
       relink: true
       force: true
+    ~/.gitconfig_work:
+      path: gitconfig_work
+      relink: true
+      force: true
     ~/.git-commit-template:
       path: git-commit-template
       relink: true
