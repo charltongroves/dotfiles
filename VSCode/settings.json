@@ -79,5 +79,6 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "gitlens.recentChanges.highlight.locations": []
+    "gitlens.recentChanges.highlight.locations": [],
+    "gitlens.hovers.enabled": false
 }

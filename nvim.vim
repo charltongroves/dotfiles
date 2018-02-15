@@ -125,6 +125,10 @@ call plug#end()
     if has('nvim')
         set listchars=tab:——,eol:¬,space:·
         " set listchars+=space:·,trail:~,extends:>,precedes:<
+    endif
+
+    if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
+        set termguicolors
         " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     endif
 
@@ -141,7 +145,6 @@ call plug#end()
 
 " APPEARANCE
     set number " line numbers
-    " set relativenumber
     set cursorline
     set showcmd
     set wildmode=full
