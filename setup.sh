@@ -18,7 +18,7 @@ brew install docker
 ####################
 brew cask install java
 
-brew install ipython yarn maven nvm haskell-stack scala sbt ammonite-repl leiningen nim
+brew install ipython yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim
 
 # The Rust community should be shot for this
 curl https://sh.rustup.rs -sSf | sh
@@ -41,7 +41,7 @@ docker run --name maria -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mariadb:late
 #########
 # UTILS # 
 #########
-brew cask install iterm-2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark cheatsheet insomnia
+brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia
 
 #########
 # CLOUD #
@@ -51,7 +51,7 @@ brew cask install heroku google-cloud-sdk
 #######
 # CLI # 
 #######
-brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq trash tig rtv jrnl exa ccat m-cli imgcat entr fpp fzffd una tokei httpie pup
+brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq trash tig rtv exa ccat m-cli entr fpp fzf fd tokei httpie pup
 
 #########
 # SHELL # 
@@ -59,20 +59,32 @@ brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher rip
 brew install zsh
 git clone --recursive https://github.com/MaxwellBo/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
+chsh -s /bin/zsh
+
+# Reboot shell
+
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-chsh -s /bin/zsh
+#########
+# FONTS #
+#########
+
+brew tap caskroom/fonts
+
+brew cask install font-fira-code
+brew cask install font-dejavu-sans-mono-for-powerline
 
 
 ###########
 # EDITORS #
 ###########
-brew install neovim/neovim/neovim
+
 brew cask install visual-studio-code intellij-idea sublime-text
 
+brew install neovim
 pip3 install neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
