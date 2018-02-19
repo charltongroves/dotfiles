@@ -51,12 +51,15 @@ call plug#begin('~/.vim/plugged')
     " Plug 'cloudhead/neovim-fuzzy' " Fast file open
     "     nnoremap <C-p> :FuzzyOpen<CR>
 
+    Plug 'srstevenson/vim-picker'
+        nnoremap <C-p> :PickerTabedit<CR>
+
     Plug 'airblade/vim-rooter' " Autoset working directory in the presence of project files
 
-    Plug 'ctrlpvim/ctrlp.vim' " Fast file open
-        let g:ctrlp_match_window = 'bottom,order:ttb'
-        let g:ctrlp_switch_buffer = 0
-        let g:ctrlp_working_path_mode = 0
+    " Plug 'ctrlpvim/ctrlp.vim' " Fast file open
+    "     let g:ctrlp_match_window = 'bottom,order:ttb'
+    "     let g:ctrlp_switch_buffer = 0
+    "     let g:ctrlp_working_path_mode = 0
 
     Plug 'scrooloose/nerdtree' " File navigation sidebar
         map <C-b> :NERDTreeToggle<CR>
@@ -81,9 +84,10 @@ call plug#begin('~/.vim/plugged')
     " Plug 'zeis/vim-kolor'
 
     Plug 'morhetz/gruvbox' " The One True Scheme
-    Plug 'NLKNguyen/papercolor-theme'
-    Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-    Plug 'endel/vim-github-colorscheme'
+
+    " Plug 'NLKNguyen/papercolor-theme'
+    " Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+    " Plug 'endel/vim-github-colorscheme'
 
 " SYNTAX / LINTING
     Plug 'sheerun/vim-polyglot'
@@ -150,8 +154,9 @@ call plug#end()
     set wildmode=full
     set colorcolumn=79
 
-" You don't know what you're missing if you don't use this.
-nmap <C-e> :e#<CR>
+    " You don't know what you're missing if you don't use this.
+    nmap <C-e> :e#<CR>
+
 " BUFFER SETTINGS
     set hidden
     set splitbelow

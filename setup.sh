@@ -51,7 +51,7 @@ brew cask install heroku google-cloud-sdk
 #######
 # CLI # 
 #######
-brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq trash tig rtv exa ccat m-cli entr fpp fzf fd tokei httpie pup
+brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq trash tig rtv exa ccat m-cli entr fpp fzf fd fzy tokei httpie pup
 
 #########
 # SHELL # 
