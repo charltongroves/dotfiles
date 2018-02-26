@@ -4,7 +4,6 @@
 
 # - SCALA BUILD TOOL - 
 # Tell sbt to not use any other repositories than the ones specified in ~/.sbt/repositories
-
 SBT_OPTS_VAL="-Dsbt.override.build.repos=true"
 
 export SBT_OPTS=$SBT_OPTS_VAL
@@ -64,7 +63,7 @@ alias htopp="sudo htop --delay=300"
 alias begone-thot="rm -rf"
 alias ydsh="yarn run dev-server-hot"
 
-github-clone () {
+github-clone() {
    git clone "https://github.com/MaxwellBo/$1"
 }
 
@@ -141,6 +140,10 @@ alias git-graph="git log --graph -10 --branches --remotes --tags  --format=forma
 # http://gitless.com/
 alias git-cloak="git update-index --assume-unchanged"
 alias git-uncloak="git update-index --no-assume-unchanged"
+
+like-remote() {
+   git fetch origin && git reset --hard origin/`git rev-parse --abbrev-ref HEAD`
+}
 
 #######
 # GCC #
