@@ -80,5 +80,6 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.recentChanges.highlight.locations": [],
-    "gitlens.hovers.enabled": false
+    "gitlens.hovers.enabled": false,
+    "python.pythonPath": "/usr/local/bin/python3"
 }
