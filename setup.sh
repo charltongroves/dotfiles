@@ -48,6 +48,11 @@ brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack
 #########
 brew cask install heroku google-cloud-sdk
 
+#########
+# LATEX #
+#########
+brew cask install mactex
+
 #######
 # CLI # 
 #######
