@@ -31,10 +31,12 @@ brew install postgresql mysql
 
 docker run --name postgres -d -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres:9.6.1
 docker run --name maria -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mariadb:latest
+docker run --name redis -d redis
 
 # TODO: Check whether these utilities can read from stdin
 # psql -h localhost -p 5432 --username=postgres
 # sudo mysql --host=127.0.0.1 --user=root -p
+# docker run -it --link maria:mysql --rm mariadb sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 # CREATE DATABASE <DB_NAME>;
 
 

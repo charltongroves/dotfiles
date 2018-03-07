@@ -30,6 +30,11 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+precmd() {
+  # sets the tab title to current dir
+  echo -ne "\e]1;${PWD##*/}\a"
+}
+
 ############
 # DROP-INS #
 ############
@@ -145,10 +150,8 @@ git-make-like-remote() {
    git fetch origin && git reset --hard origin/`git rev-parse --abbrev-ref HEAD`
 }
 
-git-pull-dev() {
-   git checkout dev
-   git pull
-   git checkout -
+git-rebase-off-dev() {
+   git checkout dev && git pull && git checkout - && git rebase -i dev
 }
 
 #######
