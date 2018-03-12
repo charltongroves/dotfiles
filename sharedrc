@@ -30,6 +30,14 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# if [ -x "$(command -v rbenv)" ]; then
+#   eval "$(rbenv init -)"
+# fi
+
+if [ -x "$(command -v rvm)" ]; then
+  source /Users/Max/.rvm/scripts/rvm
+fi
+
 precmd() {
   # sets the tab title to current dir
   echo -ne "\e]1;${PWD##*/}\a"
@@ -121,9 +129,6 @@ alias notc="jupyter nbconvert"
 # Git commit all prime
 alias gcap="git commit --all --verbose"
 
-# Git diff colour word
-alias gdcw="git diff --word-diff=color"
-alias gdwc="git diff --word-diff=color"
 
 alias git-precommit="git diff --cached --diff-algorithm=minimal -w"
 
@@ -153,6 +158,8 @@ git-make-like-remote() {
 git-rebase-off-dev() {
    git checkout dev && git pull && git checkout - && git rebase -i dev
 }
+
+alias git-diff-inline="git diff --word-diff=color"
 
 #######
 # GCC #

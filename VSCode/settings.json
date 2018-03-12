@@ -81,5 +81,6 @@
     "gitlens.currentLine.enabled": false,
     "gitlens.recentChanges.highlight.locations": [],
     "gitlens.hovers.enabled": false,
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "gitlens.keymap": "alternate"
 }
