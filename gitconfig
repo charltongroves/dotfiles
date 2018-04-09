@@ -9,15 +9,18 @@
 	editor = nvim
 [commit]
 	template = ~/.git-commit-template
+[merge]
+    tool = code-mergetool
 [diff]
-    tool = code
-[difftool "code"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+    tool = code-difftool
+    algorithm = histogram
+    colorMoved = zebra
+[difftool "code-difftool"]
+    cmd = code --wait --diff --new-window $LOCAL $REMOTE
+[mergetool "code-mergetool"]
+    cmd = code --wait --new-window $MERGED
 [mergetool "nvimdiff"]
     cmd = nvim -d $LOCAL $REMOTE
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

@@ -68,11 +68,12 @@
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressFileNotUnderSourceControlWarning": true,
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
@@ -82,5 +83,6 @@
     "gitlens.recentChanges.highlight.locations": [],
     "gitlens.hovers.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
-    "gitlens.keymap": "alternate"
+    "gitlens.keymap": "alternate",
+    "gitlens.gitExplorer.files.layout": "auto"
 }
