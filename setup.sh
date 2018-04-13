@@ -43,7 +43,7 @@ docker run --name redis -d redis
 #########
 # UTILS # 
 #########
-brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken
+brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken spectacle
 
 #########
 # CLOUD #
@@ -58,7 +58,7 @@ brew cask install mactex
 #######
 # CLI # 
 #######
-brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq trash tig rtv exa ccat m-cli entr fpp fzf fd fzy tokei httpie pup
+brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq gron trash tig rtv exa ccat m-cli entr fpp fzf fd fzy tokei httpie pup
 
 #########
 # SHELL # 
