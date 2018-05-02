@@ -18,8 +18,7 @@ brew install docker
 ####################
 brew cask install java
 
-brew install yarn haskell-stack scala sbt ammonite-repl leiningen nim
-brew cask install ipython nvm
+brew install yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim pipenv
 
 # The Rust community should be shot for this
 curl https://sh.rustup.rs -sSf | sh
@@ -44,7 +43,7 @@ docker run --name redis -d redis
 #########
 # UTILS # 
 #########
-brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken spectacle
+brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken microsoft-remote-desktop-beta spectacle
 
 #########
 # CLOUD #

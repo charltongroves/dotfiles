@@ -21,6 +21,11 @@
             "strings": true
         }
     },
+    "[latex]": {
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 80,
+        "editor.wrappingIndent": "indent"
+    },
     "[haskell]" : {
         "editor.fontFamily": "Fira Code",
         "editor.fontLigatures": true,
@@ -84,5 +89,6 @@
     "gitlens.hovers.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "gitlens.keymap": "alternate",
+    "latex-workshop.view.pdf.viewer": "tab",
     "gitlens.gitExplorer.files.layout": "auto"
 }
