@@ -18,7 +18,8 @@ brew install docker
 ####################
 brew cask install java
 
-brew install ipython yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim
+brew install yarn haskell-stack scala sbt ammonite-repl leiningen nim
+brew cask install ipython nvm
 
 # The Rust community should be shot for this
 curl https://sh.rustup.rs -sSf | sh
@@ -81,9 +82,7 @@ done
 
 brew tap caskroom/fonts
 
-brew cask install font-fira-code
-brew cask install font-dejavu-sans-mono-for-powerline
-
+brew cask install font-fira-code font-dejavu-sans-mono-for-powerline
 
 ###########
 # EDITORS #

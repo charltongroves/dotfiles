@@ -34,9 +34,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #   eval "$(rbenv init -)"
 # fi
 
-if [ -x "$(command -v rvm)" ]; then
-  source /Users/Max/.rvm/scripts/rvm
-fi
+# if [ -x "$(command -v rvm)" ]; then
+#   source /Users/Max/.rvm/scripts/rvm
+# fi
 
 precmd() {
   # sets the tab title to current dir
@@ -137,6 +137,7 @@ alias git-branches="git branch -a"
 alias git-tags="git tag"
 alias git-stashes="git stash list"
 
+alias git-return-HEAD-to-staging="git reset --soft HEAD\^"
 alias git-unstage="git reset -q HEAD --"
 alias git-discard="git checkout --"
 alias git-uncommit="git reset --mixed HEAD~"
