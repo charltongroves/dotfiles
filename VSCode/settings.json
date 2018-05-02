@@ -71,7 +71,15 @@
     "workbench.editor.tabSizing": "shrink",
     "julia.executablePath": "/usr/local/bin/julia",
     "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": true,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
     "gitlens.hovers.currentLine.over": "line",
@@ -81,5 +89,6 @@
     "gitlens.hovers.enabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "gitlens.keymap": "alternate",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "gitlens.gitExplorer.files.layout": "auto"
 }
