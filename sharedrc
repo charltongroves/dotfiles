@@ -2,7 +2,7 @@
 # ENV #
 #######
 
-# - SCALA BUILD TOOL - 
+# - SCALA BUILD TOOL -
 # Tell sbt to not use any other repositories than the ones specified in ~/.sbt/repositories
 SBT_OPTS_VAL="-Dsbt.override.build.repos=true"
 
@@ -20,14 +20,14 @@ alias offdebug='SBT_OPTS="$SBT_OPTS_VAL"'
 
 # - NODE VERSION MANAGER -
 export NVM_DIR="$HOME/.nvm"
-# . "/usr/local/opt/nvm/nvm.sh"
+. "/usr/local/opt/nvm/nvm.sh"
 
 export FZF_DEFAULT_OPTS="--height 40% --reverse --border --ansi --preview 'head -32 {}'"
 
 export FZF_DEFAULT_COMMAND='fd --type file --follow --color=always --hidden --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # if [ -x "$(command -v rbenv)" ]; then
@@ -61,11 +61,11 @@ fi
 
 if [ -x "$(command -v emacs-25.2)" ]; then
    alias emacs=emacs-25.2
-fi 
+fi
 
 if [ -x "$(command -v ccat)" ]; then
    alias cat='ccat --bg="dark"'
-fi 
+fi
 
 #########
 # UTILS #
@@ -172,15 +172,14 @@ alias git-diff-inline="git diff --word-diff=color"
 alias gcc-uq="gcc -Wall -pedantic -std=gnu99"
 
 # http://stackoverflow.com/questions/3375697/useful-gcc-flags-for-c
-alias gcc-norm=" 
+alias gcc-norm="
 clang \
 -Wall \
 -Wextra \
 -Wpedantic \
 -Wshadow \
 -Wstrict-prototypes \
--Wmisleading-indentation \
-" # (c)ompile (C) (n)ormal (f)lags
+-Wmisleading-indentation" # (c)ompile (C) (n)ormal (f)lags
 
 alias gcc-strict="
 ccwf \
@@ -189,6 +188,4 @@ ccwf \
 -Wpointer-arith \
 -Wcast-align \
 -Wwrite-strings \
--Waggregate-return \
-" # (c)ompile (C) (s)trict (f)lags
-
+-Waggregate-return" # (c)ompile (C) (s)trict (f)lags
