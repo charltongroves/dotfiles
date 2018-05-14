@@ -43,7 +43,7 @@ docker run --name redis -d redis
 #########
 # UTILS # 
 #########
-brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken microsoft-remote-desktop-beta spectacle
+brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken microsoft-remote-desktop-beta spectacle mosh
 
 #########
 # CLOUD #
@@ -63,7 +63,7 @@ brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher rip
 #########
 # SHELL # 
 #########
-brew install zsh
+brew install zsh fish
 git clone --recursive https://github.com/MaxwellBo/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 chsh -s /bin/zsh
@@ -81,9 +81,7 @@ done
 
 brew tap caskroom/fonts
 
-brew cask install font-fira-code
-brew cask install font-dejavu-sans-mono-for-powerline
-
+brew cask install font-fira-code font-dejavu-sans-mono-for-powerline
 
 ###########
 # EDITORS #

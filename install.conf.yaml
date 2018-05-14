@@ -54,6 +54,10 @@
       path: sharedrc
       relink: true
       force: true
+    ~/.config/fish/config.fish:
+      path: config.fish
+      relink: true
+      force: true
     # GIT
     ~/.gitconfig:
       path: gitconfig
