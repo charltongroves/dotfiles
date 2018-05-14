@@ -58,7 +58,7 @@ brew cask install mactex
 #######
 # CLI # 
 #######
-brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq gron trash tig rtv exa ccat m-cli entr fpp fzf fd fzy tokei httpie pup
+brew install pandoc gitless wget ranger screenfetch tmux the_silver_searcher ripgrep lnav q jq gron trash tig rtv exa ccat m-cli entr fpp fzf fd fzy tokei httpie pup loc
 
 #########
 # SHELL # 
@@ -92,7 +92,7 @@ brew cask install font-dejavu-sans-mono-for-powerline
 brew cask install visual-studio-code intellij-idea sublime-text
 
 brew install neovim
-pip3 install neovim
+pip3 install neovim pyre-check flit pipenv
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
