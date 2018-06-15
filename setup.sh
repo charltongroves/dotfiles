@@ -18,7 +18,7 @@ brew install docker
 ####################
 brew cask install java
 
-brew install yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim pipenv
+brew install yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim pipenv go rustup-init
 
 # The Rust community should be shot for this
 curl https://sh.rustup.rs -sSf | sh
