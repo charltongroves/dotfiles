@@ -35,6 +35,8 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.tabSizing": "shrink",
     "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true, 
     "vim.enableNeovim": false,
     "vim.neovimPath": "nvim",
     "vim.easymotionMarkerBackgroundColor": "#FFFFFF",
