@@ -1,13 +1,13 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontSize": 17,
+    "editor.fontSize": 14,
     "editor.fontFamily": "DejaVu Sans Mono for Powerline",
     "editor.rulers": [
         80,
         100,
         120
     ],
-    "editor.lineHeight": 23,
+    "editor.lineHeight": 20,
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
@@ -17,12 +17,12 @@
     "editor.stablePeek": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.renderControlCharacters": true,
     "files.autoSave": "onFocusChange",
     "window.newWindowDimensions": "fullscreen",
     "window.openFoldersInNewWindow": "on",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "window.closeWhenEmpty": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
@@ -34,19 +34,6 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.tabSizing": "shrink",
-    "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.sneakUseIgnorecaseAndSmartcase": true, 
-    "vim.enableNeovim": false,
-    "vim.neovimPath": "nvim",
-    "vim.easymotionMarkerBackgroundColor": "#FFFFFF",
-    "vim.easymotionMarkerForegroundColorOneChar": "#aa0000",
-    "vim.easymotionMarkerForegroundColorTwoChar": "#00aa00",
-    "vim.easymotionMarkerFontSize": "17",
-    "vim.easymotionMarkerWidthPerChar": 14,
-    "vim.easymotionMarkerHeight": 20,
-    "vim.easymotionMarkerYOffset": 15,
-    "vim.easymotionMarkerFontFamily": "DejaVu Sans Mono for Powerline",
     "[markdown]": {
         "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 80,
@@ -92,4 +79,12 @@
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.currentLine.enabled": false,
-}
+    "javascript.validate.enable": false,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "eslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "eslint.enable": true
+  }

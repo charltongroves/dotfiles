@@ -18,7 +18,8 @@ brew install docker
 ####################
 brew cask install java
 
-brew install yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim pipenv go rustup-init
+brew install yarn nvm ruby haskell-stack pipenv rustup-init
+
 
 # The Rust community should be shot for this
 # curl https://sh.rustup.rs -sSf | sh
@@ -29,9 +30,9 @@ brew install yarn nvm haskell-stack scala sbt ammonite-repl leiningen nim pipenv
 #############
 brew install postgresql mysql
 
-docker run --name postgres -d -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres:9.6.1
-docker run --name maria -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mariadb:latest
-docker run --name redis -d redis
+# docker run --name postgres -d -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres:9.6.1
+# docker run --name maria -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mariadb:latest
+# docker run --name redis -d redis
 
 # TODO: Check whether these utilities can read from stdin
 # psql -h localhost -p 5432 --username=postgres
@@ -43,12 +44,12 @@ docker run --name redis -d redis
 #########
 # UTILS # 
 #########
-brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack keybase kitematic wireshark insomnia gitkraken microsoft-remote-desktop-beta spectacle mosh
+brew cask install iterm2 google-backup-and-sync google-chrome flux spotify slack kitematic wireshark insomnia gitkraken spectacle
 
 #########
 # CLOUD #
 #########
-brew cask install heroku google-cloud-sdk
+brew cask install heroku google-cloud-sdk awscli
 
 #########
 # LATEX #
@@ -87,8 +88,7 @@ brew cask install font-fira-code font-dejavu-sans-mono-for-powerline
 # EDITORS #
 ###########
 
-brew cask install visual-studio-code intellij-idea sublime-text
-
+brew cask install visual-studio-code
 brew install neovim
 pip3 install neovim pyre-check flit pipenv
 
@@ -96,5 +96,4 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 nvim +PlugClean +PlugInstall +qa
-
 

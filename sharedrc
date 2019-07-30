@@ -191,3 +191,16 @@ ccwf \
 -Wcast-align \
 -Wwrite-strings \
 -Waggregate-return" # (c)ompile (C) (s)trict (f)lags
+
+
+alias tanda-server='ssh deployer@local.tanda.co "bash -lc '/home/deployer/server/start'"'
+alias tanda-worker='ssh deployer@local.tanda.co "bash -lc '/home/deployer/server/worker'"'
+alias tanda-console='ssh deployer@local.tanda.co "bash -lc '/home/deployer/server/console'"'
+alias tanda-bundle='ssh deployer@local.tanda.co "bash -lc '/home/deployer/server/bundle'"'
+alias tanda-upload-images='ssh deployer@local.tanda.co "bash -lc '/home/deployer/server/upload-images'"'
+alias tanda-test='ssh deployer@local.tanda.co "bash -lc '/home/deployer/server/test'"'
+alias tanda-ssh='ssh -A ruby@13.210.176.82'
+alias tanda-sync='cd ~/code/payaus && ./useful_scripts/dev-server/sync-aws.sh charliegroves'
+alias tssh='ssh ruby@52.64.160.71'
+alias tanda-remote-ssh='ssh ruby@13.210.176.82'
+alias boyztown-ssh='ssh -i ~/keys/minecraft-server.pem ubuntu@boyztown.net'

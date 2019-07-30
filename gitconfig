@@ -1,12 +1,12 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Max Bo
-	email = max@maxbo.me
+	name = Charlton Groves
+	email = charltongroves@gmail.com
 [includeIf "gitdir:~/work/"]
 	path = ~/.gitconfig_work
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = nvim
+	editor = vim
 [commit]
 	template = ~/.git-commit-template
 [merge]
@@ -19,8 +19,8 @@
     cmd = code --wait --diff --new-window $LOCAL $REMOTE
 [mergetool "code-mergetool"]
     cmd = code --wait --new-window $MERGED
-[mergetool "nvim-difftool"]
-    cmd = nvim -d $LOCAL $REMOTE
+[mergetool "vim-difftool"]
+    cmd = vim -d $LOCAL $REMOTE
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
